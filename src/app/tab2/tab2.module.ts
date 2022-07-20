@@ -8,7 +8,8 @@ import { ExploreContainerComponentModule } from '../explore-container/explore-co
 
 import { Tab2PageRoutingModule } from './tab2-routing.module';
 import { JjModule } from '../module/jj/jj.module';
-import { WwModule } from './component/ww/ww.module';
+// import { WwModule } from './component/ww/ww.module';
+import { WwComponent } from './component/ww/ww.component';
 
 @NgModule({
   imports: [
@@ -18,8 +19,10 @@ import { WwModule } from './component/ww/ww.module';
     ExploreContainerComponentModule,
     Tab2PageRoutingModule,
     JjModule,
-    WwModule
+    // WwModule
   ],
-  declarations: [Tab2Page]
+  // 声明 声明就可以不用模块
+  declarations: [Tab2Page, WwComponent],
+
 })
 export class Tab2PageModule {}
